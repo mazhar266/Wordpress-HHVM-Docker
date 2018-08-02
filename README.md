@@ -3,7 +3,7 @@ Docker Implementation of Wordpress on HHVM
 
 Wordpress-HHVM-Docker is a docker compose project for WordPress. It supports both HHVM and PHP7. For now it only supports one at the time. In the future will also support HHVM and PHP-FPM as backup when HHVM fails. MySQL is the only supported database for now. This project only supports NGINX and will not support Apache in the future.
 
-##Installation guide
+## Installation guide
 
   - First you have to download [Docker Toolbox](https://www.docker.com/products/overview#/docker_toolbox) if you haven't already.
   - Download / Clone this project.

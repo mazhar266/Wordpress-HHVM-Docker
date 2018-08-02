@@ -17,9 +17,10 @@ Wordpress-HHVM-Docker is a docker compose project for WordPress. It supports bot
      - databaseUser -> 'username'
      - databasePassword -> 'secret'
 
-Note: Also the host on WP configuration should be the IP of the machine (`docker-machine ip default`)
+**Note**: Also the host on WP configuration should be the IP of the machine (`docker-machine ip default`)
 
-Things to improve/add in the future:
+## Things to improve/add in the future:
+
   - Make the host dynamic not with hardcoded IP
   - Make HHVM as primary and PHP-FPM as fallback (optional option)
   - Add more databases

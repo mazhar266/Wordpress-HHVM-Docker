@@ -1,9 +1,7 @@
 version: '2'
 
 services:
-
-### HHVM Container #######################################
-
+    # HHVM Container
     hhvm:
         build: ./hhvm
         volumes:
@@ -14,8 +12,7 @@ services:
         links:
             - mysql
 
-### HHVM Container #######################################
-
+    # PHP Container
     php:
         build: ./php
         volumes:
@@ -25,8 +22,7 @@ services:
         links:
             - mysql
 
-### Nginx Server Container ##################################
-
+    # Nginx Server Container
     nginx:
         build: ./nginx
         volumes:
@@ -38,8 +34,7 @@ services:
         links:
             - hhvm
 
-### MySQL Container #########################################
-
+    # MySQL Container
     mysql:
         build: ./mysql
         volumes:

@@ -6,11 +6,11 @@ Wordpress-HHVM-Docker is a docker compose project for WordPress. It supports bot
 ## Installation guide
 
   - First you have to download [Docker Toolbox](https://www.docker.com/products/overview#/docker_toolbox) if you haven't already.
-  - Download / Clone this project.
-  - Download WordPress, copy it inside the folder and rename it to 'app'.
+  - Download or Clone this project.
+  - Download WordPress, copy it inside the folder and rename it to `app`.
   - Navigate with terminal inside docker folder.
-  - `docker-compose up -d nginx` // It builds docker containers using 'docker-compose.yml' as its configuration
-  - `docker-machine ip default`  // To see the IP of the VM machine that this project runs on
+  - `docker-compose up -d nginx` - It builds docker containers using `docker-compose.yml` as its configuration
+  - `docker-machine ip default` - To see the IP of the VM machine that this project runs on
   - Open your browser to that IP and you will see the WordPress installation guide.
   - Don't forget to change the WP configuration to
      - databaseName -> 'databasename'
@@ -19,7 +19,7 @@ Wordpress-HHVM-Docker is a docker compose project for WordPress. It supports bot
 
 **Note**: Also the host on WP configuration should be the IP of the machine (`docker-machine ip default`)
 
-## Things to improve/add in the future:
+## Things to improve in the future:
 
   - Make the host dynamic not with hardcoded IP
   - Make HHVM as primary and PHP-FPM as fallback (optional option)
